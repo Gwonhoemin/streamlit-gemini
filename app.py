@@ -28,7 +28,7 @@ def ask_model(client: genai.Client, file_content: str, question: str) -> str:
 
 
 def main():
-    st.title("`app.py` 도우미 — 이 파일에 대해 질문하세요")
+    st.title("수산물 도우미")
 
     if "GEMINI_API_KEY" not in st.secrets:
         st.error("GEMINI_API_KEY가 Streamlit secrets에 설정되어 있지 않습니다.")
